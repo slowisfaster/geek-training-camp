@@ -87,8 +87,8 @@ cpdef target_mean_v5(data, y_name, x_name):
     return result
 
 cdef void target_mean_v5_impl(double[:] result, long[:] y, long[:] x, const long nrow):
-    cdef dict value_dict = dict()
-    cdef dict count_dict = dict()
+    cdef dict value_dict = {}
+    cdef dict count_dict = {}
 
     cdef long i
     #for i in range(nrow):
